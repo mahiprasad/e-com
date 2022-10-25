@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- styling -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/category.css">
+
+    <!-- JavaScript -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/b4821a1ed2.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Fav icon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon/favicon-16x16.png"
+    />
+
+    <title>Orgami Mart</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <section class="header_menu" id="header_menu">
+      <div class="container-fluid px-0 shadow">
+        <nav class="navbar navbar-expand-lg bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">
+              <img
+                src="./assets/img/logo.png"
+                class="img img-fluid"
+                width="50"
+                alt="logo"
+              />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="./index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./product.html">Product</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./category.html" .>Category</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    >More Info
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="./about.html">About Us</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="./contact.html"
+                        >Contact Us</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+
+              <div class="search m-3">
+                <a href="./search.html" class="btn btn-outline-dark">Search</a>
+              </div>
+
+              <div class="cart m-3">
+                <a href="./cart.html">
+                  <i class="fa-solid fa-cart-shopping fa-2x"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </section>
+<!-- ===================================================================== -->
+<section class="search_section py-5 my-5" id="search_section">
+  <div class="container">
+  <div class="title text-center mb-5">
+  <h2>Browse Our Catalogue</h2>
+  </div>
+  <div class="row">
+  <!-- BEGIN RESULT -->
+  <div class="col-md-10 mx-auto">
+  <!-- BEGIN SEARCH INPUT -->
+  <div class="input-group">
+  <input type="text" class="form-control border-dark rounded" value="xyz">
+  <span class="input-group-btn">
+    <button class="btn btn-outline-dark" type="button"><i class="fa fa-search"></i></button>
+  </span>
+  </div>
+  <!-- END SEARCH INPUT -->
+  <br>
+  <small>Showing all results matching "xyz"</small>
+  <br>
+  <!-- BEGIN TABLE RESULT -->
+  <div class="table-responsive mt-3 p-3">
+  <table class="table table-hover">
+  <tbody class="border-bottom">
+  <tr>
+
+  <td class="image"><img src="./assets/img/shop3.png"
+  width="100px"
+  class="img img-fluid" alt=""></td>
+  <td class="product">Himalayan Strawberry
+  </td>
+  <td class="rate text-right"><span><i class="fa fa-star"></i><i
+  class="fa fa-star"></i><i class="fa fa-star"></i><i
+  class="fa fa-star"></i><i class="far
+  fa-star"></i></span></td>
+  <td class="price text-right">₹255</td>
+  </tr>
+  <tr>
+
+  <td class="image"><img src="./assets/img/shop5.png"
+  width="100px"
+  class="img img-fluid" alt=""></td>
+  <td class="product">Red Chillies
+  </td>
+  <td class="rate text-right"><span><i class="fa fa-star"></i><i
+  class="fa fa-star"></i><i class="fa fa-star"></i><i
+  class="fa fa-star"></i><i class="fa
+  fa-star-half-o"></i></span></td>
+  <td class="price text-right">₹96</td>
+  </tr>
+  <tr>
+ 
+  <td class="image"><img src="./assets/img/shop2.png"
+  width="100px"
+  class="img img-fluid" alt=""></td>
+  <td class="product">Fresh Tomatoes
+  </td>
+  <td class="rate text-right"><span><i class="fa fa-star"></i><i
+  class="fa fa-star"></i><i class="fa fa-star"></i><i
+  class="far fa-star"></i><i class="far
+  fa-star"></i></span></td>
+  <td class="price text-right">₹67</td>
+  </tr>
+  </tbody>
+  </table>
+  </div>
+  <!-- END TABLE RESULT -->
+  </div>
+  <!-- END RESULT -->
+  </div>
+  </div>
+  </section>
+
+<!-- ========================================================================== -->
+    <!-- footer -->
+<section class="footer pt-5 pb-2" id="footer">
+  <footer>
+  <div class="container-fluid">
+  <div class="row">
+  <div class="col-md-3 col-6 pl-5 pl-small-15">
+  <div class="footer_title">
+  <a href="./index.html"><img src="./assets/img/logo.png" width="100px"
+  class="img img-fluid" alt="logo"></a>
+  </div>
+  <div>
+    <h2>
+  Orgami</h2>
+  </div>
+  </div>
+  <div class="col-md-3 col-6">
+  <div class="footer_title pt-3 mb-3">
+  <h3>Quick Links</h3>
+  </div>
+  <div class="footer_links">
+    <p>
+  <ul>
+  <li><a href="./about.html">About</a></li>
+  <li><a href="javascript:;">Offers & Discounts</a></li>
+  <li><a href="javascript:;">Get Coupon</a></li>
+  <li><a href="./contact.html">Contact Us</a></li>
+  </ul>
+</p>
+  </div>
+  </div>
+  <div class="col-md-3 col-6">
+  <div class="footer_title pt-3 mb-3">
+  <h3>New Products</h3>
+  </div>
+  <div class="footer_links">
+  <ul>
+    <li><a href="javascript:;">Spices</a></li>
+    <li><a href="javascript:;">Herbs</a></li>
+    <li><a href="javascript:;">Dry Fruits</a></li>
+    <li><a href="javascript:;">Seeds</a></li>
+  </ul>
+  </div>
+  </div>
+  <div class="col-md-3 col-6">
+  <div class="footer_title pt-3 mb-3">
+  <h3>Support</h3>
+  </div>
+  <div class="footer_links">
+  <ul>
+  <li><a href="javascript:;">Frequently Asked Questions</a></li>
+  <li><a href="javascript:;">Terms & Conditions</a></li>
+  <li><a href="javascript:;">Privacy Policy</a></li>
+  <li><a href="javascript:;">Report a Payment Issue</a></li>
+  </ul>
+  </div>
+  </div>
+  </div>
+  </div>
+  <div>
+  <h6 class="text-center mt-3">©2022 Mahi Prasad
+  </h6>
+  </div>
+  </footer>
+  </section>
+  <div class="backtop">
+  <a id="button" href="#top" class="btn btn-lg btn-outline-dark" role="button">
+  <i class="fas fa-chevron-up text-dark"></i>
+  </a>
+  </div>
+  
+
+    <!-- bootstrap js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./assets/js/script.js"></script>
+    <!-- tailwind compo -->
+  </body>
+</html>

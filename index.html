@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- styling -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/home.css">
+
+    <!-- JavaScript -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/b4821a1ed2.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Fav icon -->
+    <link
+      rel="icon"
+      type="./assets/img/logo.png"
+      sizes="32x32"
+      href="./favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="./assets/img/logo.png"
+      sizes="16x16"
+      href="./favicon/favicon-16x16.png"
+    />
+
+    <title>Orgami Mart</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <section class="header_menu" id="header_menu">
+      <div class="container-fluid px-0 shadow">
+        <nav class="navbar navbar-expand-lg bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">
+              <img
+                src="./assets/img/logo.png"
+                class="img img-fluid"
+                width="50"
+                alt="logo"
+              />
+            </a>
+
+            <div class="search m-3">
+              <input
+                type="text"
+                class="search-box"
+                placeholder="search brand, product"
+              />
+              <button class="search-btn"><a href="./search.html"><i class="fa-solid fa-magnifying-glass"></i></a></button>
+            </div>
+
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="./index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./product.html">Product</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./category.html" .>Category</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    >More Info
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="./about.html">About Us</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="./contact.html"
+                        >Contact Us</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+
+              
+
+              <div class="cart m-3">
+                <a href="#"><i class=" nav-icon fa-solid fa-2x fa-circle-user"></i></a>
+                <a href="./cart.html">
+                  <i class=" nav-icon fa-solid fa-cart-shopping fa-2x"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </section>
+
+    <!-- caraousel -->
+    <section class="carousel 300-px-wide mb-0" id="carousel">
+      <div
+        id="carouselExampleControls"
+        class="carousel slide mb-0"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner mb-0">
+          <div class="carousel-item active mb-0">
+            <img src="./assets/img/home/slide1.jpg" class="d-block w-100" alt="1" />
+            <div class="carousel-caption mb-0">
+              <h5>Organic Nursery</h5>
+              <p class="mb-0">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Asperiores, quo.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/img/home/slide2.jpg" class="d-block w-100" alt="2" />
+            <div class="carousel-caption">
+              <h5>Organic Farming</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla,
+                sequi?
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/img/home/slide3.jpg" class="d-block w-100" alt="3" />
+            <div class="carousel-caption">
+              <h5>Organic Cultivation</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque,
+                error?
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev mb-0"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next mb-0"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- category -->
+    <section class="category py-5 my-5" id="category">
+      <div class="container-fluid">
+        <div class="category-title text-center mb-5">
+          <h1 class="text-capitalize">Shop By Category</h1>
+        </div>
+
+        <div class="row text-center">
+          <div class="col-lg-4 pic">
+            <div class="mb-4">
+              <div>
+                <a href="./category.html"
+                  ><img src="./assets/img/home/product1.png" alt="1" width="310" />
+                  <div class="w-100 btn btn-lg">Spices</div></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 pic">
+            <div class="mb-4">
+              <div>
+                <a href="./category.html"
+                  ><img src="./assets/img/home/product2.png" alt=2" width="310" >
+                  <div class="w-100 btn btn-lg">Veggies</div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 pic">
+            <div class="mb-4">
+              <div>
+                <a href="./category.html"
+                  ><img src="./assets/img/home/product3.png" alt="3" width="310" />
+                  <div class="w-100 btn btn-lg">Pulses</div></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 pic">
+            <div class="mb-4">
+              <div>
+                <a href="./category.html"
+                  ><img src="./assets/img/home/product4.png" alt="3" width="310" />
+                  <div class="w-100 btn btn-lg">Herbs</div></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 pic">
+            <div class="mb-4">
+              <div>
+                <a href="./category.html"
+                  ><img src="./assets/img/home/product5.png" alt="3" width="310" />
+                  <div class="w-100 btn btn-lg">Seeds 'n Nuts</div></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 pic">
+            <div class="mb-4">
+              <div>
+                <a href="./category.html"
+                  ><img src="./assets/img/home/product6.png" alt="3" width="310" />
+                  <div class="w-100 btn btn-lg">Fruits 'n Berries</div></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- latest product -->
+    <section class="products py-5 my-5" id="products">
+      <div class="container">
+        <div class="section_title text-center mb-5">
+          <h1 class="text-capitalize">Latest Products</h1>
+        </div>
+        <div class="row mb-5">
+          <div class="col-md-4 col-12">
+            <div class="single_product shadow text-center p-1">
+              <div class="product_img">
+                <a href="product_detail.html"
+                  ><img
+                    src="assets/img/shop1.png"
+                    class="img img-fluid"
+                    alt=""
+                /></a>
+                <div class="new_product">
+                  <span class="badge py-2 px-3 badge-pill badge-danger"
+                    >New</span
+                  >
+                </div>
+              </div>
+              <div class="product-caption my-3">
+                <div class="product-ratting">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star low-star"></i>
+                  <i class="far fa-star low-star"></i>
+                </div>
+                <h4>
+                  <a href="product_detail.html">Farm Carrots</a>
+                </h4>
+                <div class="price">
+                  <b><span class="mr-1">₹</span><span>45</span></b>/kg
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-12">
+            <div
+              class="single_product shadow text-center p-1 mt-small-5 mb-small-5"
+            >
+              <div class="product_img">
+                <a href="product_detail.html"
+                  ><img
+                    src="assets/img/shop2.png"
+                    class="img img-fluid"
+                    alt=""
+                /></a>
+                <div class="new_product">
+                  <span class="badge py-2 px-3 badge-pill badge-danger"
+                    >New</span
+                  >
+                </div>
+              </div>
+              <div class="product-caption my-3">
+                <div class="product-ratting">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star low-star"></i>
+                  <i class="far fa-star low-star"></i>
+                </div>
+                <h4>
+                  <a href="product_detail.html">Fresh Tomatoes</a>
+                </h4>
+                <div class="price">
+                  <b><span class="mr-1">₹</span><span>67</span></b>/kg
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-12">
+            <div class="single_product shadow text-center p-1">
+              <div class="product_img">
+                <a href="product_detail.html"
+                  ><img
+                    src="assets/img/shop3.png"
+                    class="img img-fluid"
+                    alt=""
+                /></a>
+                <div class="new_product">
+                  <span class="badge py-2 px-3 badge-pill badge-danger"
+                    >New</span
+                  >
+                </div>
+              </div>
+              <div class="product-caption my-3">
+                <div class="product-ratting">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star low-star"></i>
+                  <i class="far fa-star low-star"></i>
+                </div>
+                <h4>
+                  <a href="product_detail.html">Himalayan Strawberry</a>
+                </h4>
+                <div class="price">
+                  <b><span class="mr-1">₹</span><span>255</span></b>/kg
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+   <!-- featues -->
+<section class=" py-5 mt-5 feature">
+  <div class="container ">
+  <div class="section_title text-center mb-5">
+  <h1 class="text-capitalize">Our Features</h1>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4 col-12 shadow p-3">
+    <div class="text-center">
+    <div class="mb-4">
+    <i class="fas fa-shipping-fast fa-3x mb-3 pt-2"></i>
+    <div>
+    <h3>Free Shipping Method</h3>
+    </div>
+    </div>
+    <div>
+      <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos impedit id
+    accusamus quas maxime
+    expedita nostrum atque delectus deleniti ad modi repellat debitis ipsam
+    quisquam amet, odit voluptate
+    recusandae distinctio? Perferendis tenetur quibusdam porro dolor dignissimos
+    id magnam debitis vitae?</p>
+    </div>
+    </div>
+    </div>
+    <div class="col-md-4 col-12 shadow p-3 mt-small-5 mb-small-5">
+    <div class="text-center">
+    <div class="mb-4">
+      <i class="fas fa-lock fa-3x mb-3 pt-2"></i>
+<div>
+<h3>Secure Payment System</h3>
+</div>
+</div>
+<div>
+  <p>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos impedit id
+accusamus quas maxime
+expedita nostrum atque delectus deleniti ad modi repellat debitis ipsam
+quisquam amet, odit voluptate
+recusandae distinctio? Perferendis tenetur quibusdam porro dolor dignissimos
+id magnam debitis vitae?
+</p>
+</div>
+</div>
+</div>
+<div class="col-md-4 col-12 shadow p-3">
+<div class="text-center">
+<div class="mb-4">
+<i class="fas fa-headphones fa-3x mb-3 pt-2"></i>
+<div>
+<h3>24/7 Support</h3>
+</div>
+</div>
+<div>
+  <p>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos impedit id
+accusamus quas maxime
+expedita nostrum atque delectus deleniti ad modi repellat debitis ipsam
+quisquam amet, odit voluptate
+recusandae distinctio? Perferendis tenetur quibusdam porro dolor dignissimos
+id magnam debitis vitae?
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- footer -->
+<section class="footer pt-5 pb-2" id="footer">
+  <footer>
+  <div class="container-fluid">
+  <div class="row">
+  <div class="col-md-3 col-6 pl-5 pl-small-15">
+  <div class="footer_title">
+  <a href="index.html"><img src="./assets/img/logo.png" width="100px"
+  class="img img-fluid" alt="logo"></a>
+  </div>
+  <div>
+    <h2>
+  Orgami</h2>
+  </div>
+  </div>
+  <div class="col-md-3 col-6">
+  <div class="footer_title pt-3 mb-3">
+  <h3>Quick Links</h3>
+  </div>
+  <div class="footer_links">
+    <p>
+  <ul>
+  <li><a href="about.html">About</a></li>
+  <li><a href="javascript:;">Offers & Discounts</a></li>
+  <li><a href="javascript:;">Get Coupon</a></li>
+  <li><a href="contact.html">Contact Us</a></li>
+  </ul>
+</p>
+  </div>
+  </div>
+  <div class="col-md-3 col-6">
+  <div class="footer_title pt-3 mb-3">
+  <h3>New Products</h3>
+  </div>
+  <div class="footer_links">
+  <ul>
+    <li><a href="javascript:;">Spices</a></li>
+    <li><a href="javascript:;">Herbs</a></li>
+    <li><a href="javascript:;">Dry Fruits</a></li>
+    <li><a href="javascript:;">Seeds</a></li>
+  </ul>
+  </div>
+  </div>
+  <div class="col-md-3 col-6">
+  <div class="footer_title pt-3 mb-3">
+  <h3>Support</h3>
+  </div>
+  <div class="footer_links">
+  <ul>
+  <li><a href="javascript:;">Frequently Asked Questions</a></li>
+  <li><a href="javascript:;">Terms & Conditions</a></li>
+  <li><a href="javascript:;">Privacy Policy</a></li>
+  <li><a href="javascript:;">Report a Payment Issue</a></li>
+  </ul>
+  </div>
+  </div>
+  </div>
+  </div>
+  <div>
+  
+  </div> <h6 class="text-center mt-3">©2022 Mahi Prasad
+  </h6>
+  </footer>
+  </section>
+ 
+  <div class="backtop">
+  <a id="button" href="#top" class="btn btn-lg btn-outline-dark" role="button">
+  <i class="fas fa-chevron-up text-dark"></i>
+  </a>
+  </div>
+  
+
+
+
+    <!-- bootstrap js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- tailwind compo -->
+  </body>
+</html>

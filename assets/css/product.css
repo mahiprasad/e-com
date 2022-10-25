@@ -1,0 +1,22 @@
+body{
+    font-weight: normal;
+}
+
+.list-group-item{
+    background-color: #95a47b00;
+    border: none;
+}
+.list-group-item:hover{
+    cursor:pointer;
+    color: #8a9f66;
+}
+
+
+.form-control-range{
+    cursor: pointer;
+}
+
+.single_product{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.792);
+}
